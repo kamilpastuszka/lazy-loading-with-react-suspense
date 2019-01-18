@@ -12,7 +12,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.props, this.state);
     let content;
     if (!this.state.showImage) {
       content = <Button clicked={this.showImage} />;
