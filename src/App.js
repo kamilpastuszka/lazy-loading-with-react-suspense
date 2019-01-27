@@ -17,9 +17,12 @@ class App extends Component {
       content = <Button clicked={this.showImage} />;
     } else {
       content = (
-        <Suspense fallback={<Spinner />}>
-          <Image />
-        </Suspense>
+        <>
+          <Suspense fallback={<Spinner />}>
+            <Image />
+          </Suspense>
+          <Button clicked={this.showImage} />
+        </>
       );
     }
     return <div className="container">{content}</div>;
