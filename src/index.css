@@ -38,13 +38,17 @@ button {
   text-transform: none;
   text-transform: capitalize;
   color: #fff;
-  border: 0 none;
+  border: none;
   border-radius: 5px;
 }
 
 button:hover {
   color: whitesmoke;
   background-color: darkgrey;
+}
+
+button:focus {
+  outline: 0;
 }
 
 /* Spinner */
